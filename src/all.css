@@ -1,0 +1,40 @@
+.link:hover{
+    background-color: black;
+}
+
+.link{
+    color: whitesmoke !important;
+}
+.navcolor{
+    background-color: #c4c4c4 !important;
+    padding:0px 20px;
+    border-radius: 6px !important;
+}
+
+/* .buttondrop{
+    background-color: white !important;
+    border: black;
+} */
+
+#dropdown-basic-button{
+    background-color: white;
+    color: black;
+    border-color: black;
+    display: block;
+}
+
+.textdata{
+    text-align: left;
+}
+
+table{
+    margin-left: 67px;
+}
+td{
+    padding: 10px 81px;
+}
+
+.hi{
+    border-bottom:1px solid black;
+   
+}

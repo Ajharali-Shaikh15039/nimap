@@ -2,12 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Task from './components/Task'
+import User from './components/User'
+import Home from './components/Home'
 import reportWebVitals from './reportWebVitals';
+import Loginform from './components/loginform';
+import { Provider } from "react-redux";
+import configureStore from "./components/redux/store";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+  <Provider store={configureStore()}>
+  <App />
+  </Provider>
+ 
+  <Switch>
+                <Route path="/" component={Loginform} exact />
+                <Route path="/home" component={Home} />
+                <Route path="/task" component={Task} />
+                <Route path="/user" component={User} />
+      </Switch>
+      </BrowserRouter>
+
+    
+  ,
   document.getElementById('root')
 );
 
